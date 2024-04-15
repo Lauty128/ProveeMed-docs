@@ -1,0 +1,8 @@
+{
+  "label": "Endpoints",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Lista de endpoints del sistema donde se indica que hace cada uno y que retorna"
+  }
+}

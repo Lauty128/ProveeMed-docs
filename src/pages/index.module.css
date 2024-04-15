@@ -1,0 +1,87 @@
+body{
+  --border-color: rgb(68, 68, 68)
+}
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------------------------------------------ */
+/* ---------------- SOBRE NOSOTROS ---------------------- */
+/* ------------------------------------------------------ */
+
+.AboutUs{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1em;
+  padding-bottom: 5em;
+}
+
+.AboutUs__h2{ margin-top: 2em; margin-bottom: 10px; }
+.AboutUs__p{ color: #8d8d8d; }
+
+.DeveloperCard{
+  display: flex;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+.DeveloperCard__image{
+  width: 150px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.DeveloperCard__information h3{ font-size: 1.6em; line-height: 110%; margin-bottom: 0 }
+.DeveloperCard__information p{ margin-bottom: 1em; margin-top: 4px; opacity: .8 }
+.DeveloperCard__information span{ font-size: 1em; opacity: .7 }
+.DeveloperCard__buttons{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  font-size: .9em;
+} 
+.DeveloperCard__button{ 
+  display: flex;
+  gap: 5px;
+  width: fit-content;
+  background-color: #e8e7e7;
+  color: black; 
+  border-radius: 3px;
+  padding: 4px 6px;
+  transform: scale(1);
+  transition: transform .3s;
+}
+.DeveloperCard__button:hover{
+  color: #000 !important;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+.DeveloperCard__button--linkedin{ background-color: #378fe9; color: #FFF }
+.DeveloperCard__button--linkedin:hover{ color: #FFF !important }
+
+@media screen and (max-width: 650px) {
+  .DeveloperCard{
+    flex-wrap: wrap;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+  }
+}
