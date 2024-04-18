@@ -66,10 +66,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/icon.png',
       navbar: {
-        title: 'ProveeMed',
+        // title: 'ProveeMed',
         logo: {
           alt: 'ProveeMed Logo',
-          src: 'img/icon.png',
+          src: 'img/icon-h.png',
         },
         items: [
           {
@@ -79,6 +79,7 @@ const config = {
             label: 'Documentación',
           },
           {to: '/nosotros', label: 'Nosotros', position: 'left'},
+          {to: '/instalacion', label: 'Instalación', position: 'left'},
           {
             href: 'https://github.com/Lauty128/ProveeMed-laravel',
             label: 'GitHub',
