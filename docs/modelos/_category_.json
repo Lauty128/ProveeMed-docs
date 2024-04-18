@@ -1,0 +1,8 @@
+{
+  "label": "Modelos",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Lista de los modelos, para poder realizar consultas a la base de datos a traves de funciones"
+  }
+}
