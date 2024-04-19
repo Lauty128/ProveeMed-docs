@@ -90,6 +90,10 @@ $users = User::all();
 <?php
 
 $user = User::find(1);
+
+# Buscar con mas de un parametro
+# La funcion first() obliga a que se devuelva un objeto del primer usuario que coincide
+$user = User::where("id", 1)->where("active", 1)->first();
 ```
 
 ### Insertar un nuevo usuario:
@@ -102,6 +106,17 @@ $user->name = 'Cursosdesarrolloweb';
 $user->email = 'eloquent@cursosdesarrolloweb.es';
 $user->password = bcrypt('password');
 $user->save();
+```
+
+**Alternativamente, podemos utilizar el método create para crear registros con Eloquent:**
+
+```php
+<?php
+User::create([
+    'name' => 'Cursosdesarrolloweb',
+    'email' => 'eloquent@cursosdesarrolloweb.es',
+    'password' => bcrypt('password')
+]);
 ```
 
 ### Actualizar un usuario existente:
