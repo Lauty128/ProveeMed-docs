@@ -111,3 +111,5 @@ Si quieres cargar datos de prueba, los cuales ya están configurados para cargar
 ```bash
 php artisan db:seed
 ```
+
+Puedes revisar la sección [datos de prueba](/docs/datos-de-prueba) para poder acceder al sistema con los usuarios cargados desde los seeders.
