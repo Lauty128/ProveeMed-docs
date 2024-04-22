@@ -66,10 +66,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/icon.png',
       navbar: {
-        // title: 'ProveeMed',
+        title: 'ProveeMed',
         logo: {
           alt: 'ProveeMed Logo',
-          src: 'img/icon-h.png',
+          src: 'img/icon.png',
+          style:{ borderRadius: '50%' }
         },
         items: [
           {

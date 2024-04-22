@@ -2,23 +2,83 @@ body{
   --border-color: rgb(68, 68, 68)
 }
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
+.header{
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  gap: 1em;
+  padding: 20px;
+  min-height: calc(100vh - 40px);
+}
+
+.header__presentation h1{
+  max-width: 600px;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: var(--primary-color-text);
+}
+.header__presentation p{
+  max-width: 600px;
+  color: var(--secundary-color-text);
+}
+
+.header__button{
+  display: block;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: var(--ifm-color-emphasis-300);
+  color: var(--primary-color-text);
+  border-radius: 10px;
+  box-shadow: 2px 6px 10px 0px rgba(0,0,0,0.35);
+}
+.header__button:hover{
+  color: currentColor !important;
+  text-decoration: none !important;
+}
+
+.header__button--main{
+  background-color: var(--ifm-color-primary);
+  color: #FFF;
+  margin-bottom: .8em;
+}
+
+.header__button--main:hover{ color: #fff !important; }
+
+.header__github span{
+  display: block;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.header__githubButton{
+  float: right;
+  padding: 5px 10px;
+  font-weight: bold;
+  background-color: var(--button-bg-color);
+  color: var(--ifm-color-emphasis-100);
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform .2s;
+}
+.header__githubButton:hover{
+  color: var(--ifm-color-emphasis-100) !important;
+  text-decoration: none !important;
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 950px){
+  .header{
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 3em;
+  }
+  .header__githubButton{ float: left; }
 }
 
 /* ------------------------------------------------------ */
