@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Dominar las Rutas de Laravel",
+        "image": "https://kinsta.com/es/wp-content/uploads/sites/8/2022/12/laravel-routes-1024x512.jpg",
+        "url": "https://kinsta.com/es/blog/rutas-laravel/"
+    },
+    {
+        "title": "Comprender Laravel Blade y Cómo Usarlo",
+        "image": "https://kinsta.com/es/wp-content/uploads/sites/8/2023/08/laravel-blade-1024x512.jpg",
+        "url": "https://kinsta.com/es/blog/laravel-blade/"
+    },
+    {
+        "title": "Cómo hacer CRUD con Laravel",
+        "image": "https://kinsta.com/es/wp-content/uploads/sites/8/2023/08/laravel-crud-1024x512.jpg",
+        "url": "https://kinsta.com/es/blog/laravel-crud/"
+    },
+    {
+        "title": "Las Relaciones de Laravel Eloquent: Una Guía Avanzada",
+        "image": "https://kinsta.com/es/wp-content/uploads/sites/8/2023/06/laravel-relationships-1024x512.jpg",
+        "url": "https://kinsta.com/es/blog/laravel-relaciones/"
+    },
+    {
+        "title": "Validación de Datos en Laravel: Conveniente y Potente",
+        "image": "https://kinsta.com/es/wp-content/uploads/sites/8/2023/05/laravel-validation-1024x512.jpg",
+        "url": "https://kinsta.com/es/blog/laravel-validacion/"
+    },
+    {
+        "title": "Validación de Datos en Laravel: Conveniente y Potente",
+        "image": "https://kinsta.com/es/wp-content/uploads/sites/8/2023/05/laravel-model-factories-7-1024x512.jpg",
+        "url": "https://kinsta.com/es/blog/laravel-model-factories/"
+    },
+    {
+        "title": "Transacciones en la Base de Datos de Laravel",
+        "image": "https://kinsta.com/es/wp-content/uploads/sites/8/2022/07/laravel-database-1024x512.jpg",
+        "url": "https://kinsta.com/es/base-de-conocimiento/base-de-datos-de-laravel/"
+    },
+    {
+        "title": "Construye un Sistema de Comentarios en Tiempo Real en Laravel",
+        "image": "https://kinsta.com/es/wp-content/uploads/sites/8/2021/09/laravel-comments-1024x512.jpeg",
+        "url": "https://kinsta.com/es/blog/comentarios-de-laravel/"
+    },
+    {
+        "title": "Todo lo que Necesitas Saber Sobre la Caché de Laravel",
+        "image": "https://kinsta.com/es/wp-content/uploads/sites/8/2021/08/laravel-caching-1024x512.jpeg",
+        "url": "https://kinsta.com/es/blog/laravel-caching/"
+    }
+]
