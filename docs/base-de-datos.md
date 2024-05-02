@@ -12,7 +12,7 @@ import Button from '/src/components/button/Button.js';
 <br />
 Contraseña: 12052003   
 
-## Diccionario de datos
+## Tablas
 
 ### Usuarios
 * **Tabla:** `users`
@@ -24,23 +24,27 @@ Contraseña: 12052003
 
 #### Columnas
 
-| Nombre       | Tipo de dato | Nulo   | Default    | Auto Increment | Unique |
-|--------------|--------------|--------|------------|----------------|--------|
-| id           | integer      |   SI   | SI         | SI             | SI     |
-| user_type_id | integer      |   NO   | NO         | NO             | NO     |
-| location_id  | varchar(10)  |   NO   | NO         | NO             | NO     |
-| name         | varchar(30)  |   NO   | NO         | NO             | NO     |
-| subname      | varchar(35)  |   NO   | NO         | NO             | NO     |
-| web          | varchar(60)  |   SI   | NO         | NO             | NO     |
-| email        | varchar(60)  |   NO   | NO         | NO             | SI     |
-| phone        | varchar(30)  |   SI   | NO         | NO             | NO     |
-| address      | varchar(80)  |   SI   | NO         | NO             | NO     |
-| available    | boolean      |   NO   | 1          | NO             | NO     |
-| password     | varchar      |   SI   | NO         | NO             | NO     |
-| isAccount    | boolean      |   NO   | 0          | NO             | NO     |
-| created_at   | datetime     |   NO   | current()  | NO             | NO     |
-| updated_at   | datetime     |   NO   | current()  | NO             | NO     |
-| deleted_at   | datetime     |   SI   | NULL       | NO             | NO     |
+| Nombre              | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|---------------------|--------------|------------|------------|----------------|--------|
+| **id**              | integer      |   NO       | SI         | SI             | SI     |
+| user_type_id        | integer      |   NO       | NO         | NO             | NO     |
+| location_id         | varchar(10)  |   NO       | NO         | NO             | NO     |
+| name                | varchar(30)  |   NO       | NO         | NO             | NO     |
+| subname             | varchar(35)  |   SI       | NO         | NO             | NO     |
+| web                 | varchar(60)  |   SI       | NO         | NO             | NO     |
+| email               | varchar(60)  |   NO       | NO         | NO             | SI     |
+| phone               | varchar(30)  |   SI       | NO         | NO             | NO     |
+| address             | varchar(80)  |   SI       | NO         | NO             | NO     |
+| bussiness_name      | varchar(60)  |   NO       | NO         | NO             | SI     |
+| identification      | varchar(20)  |   NO       | NO         | NO             | SI     |
+| identification_type | enum         |   NO       | NO         | NO             | NO     |
+| available           | boolean      |   NO       | 1          | NO             | NO     |
+| password            | varchar      |   SI       | NO         | NO             | NO     |
+| isAccount           | boolean      |   NO       | 0          | NO             | NO     |
+| created_at          | datetime     |   NO       | current()  | NO             | NO     |
+| updated_at          | datetime     |   NO       | current()  | NO             | NO     |
+| deleted_at          | datetime     |   SI       | NULL       | NO             | NO     |
+
 
 
 ### Equipos
@@ -52,15 +56,15 @@ Contraseña: 12052003
 
 #### Columnas
 
-| Nombre         | Tipo de dato | Nulo   | Default    | Auto Increment | Unique |
-|----------------|--------------|--------|------------|----------------|--------|
-| id             | integer      |   NO   | SI         | SI             | SI     |
-| name           | varchar(100) |   NO   | NO         | NO             | NO     |
-| category_id    | integer(10)  |   NO   | NO         | NO             | NO     |
-| umdns          | varchar(20)  |   SI   | NO         | NO             | NO     |
-| description    | varchar(100) |   SI   | NO         | NO             | NO     |
-| price          | integer(10)  |   SI   | NO         | NO             | NO     |
-| specifications | varchar(15)  |   SI   | NO         | NO             | NO     |
+| Nombre         | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|----------------|--------------|------------|------------|----------------|--------|
+| **id**         | integer      |   NO       | SI         | SI             | SI     |
+| name           | varchar(100) |   NO       | NO         | NO             | NO     |
+| category_id    | integer(10)  |   NO       | NO         | NO             | NO     |
+| umdns          | varchar(20)  |   SI       | NO         | NO             | NO     |
+| description    | varchar(100) |   SI       | NO         | NO             | NO     |
+| price          | integer(10)  |   SI       | NO         | NO             | NO     |
+| specifications | varchar(15)  |   SI       | NO         | NO             | NO     |
 
 
 ### Categorias
@@ -70,11 +74,11 @@ Contraseña: 12052003
 
 #### Columnas
 
-| Nombre        | Tipo de dato | Nulo   | Default    | Auto Increment | Unique |
-|---------------|--------------|--------|------------|----------------|--------|
-| id            | integer      |   NO   | SI         | SI             | SI     |
-| name          | varchar(100) |   NO   | NO         | NO             | NO     |
-| description   | varchar(300) |   SI   | NO         | NO             | NO     |
+| Nombre        | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|---------------|--------------|------------|------------|----------------|--------|
+| **id**        | integer      |   NO       | SI         | SI             | SI     |
+| name          | varchar(100) |   NO       | NO         | NO             | NO     |
+| description   | varchar(300) |   SI       | NO         | NO             | NO     |
 
 
 ### Marcas
@@ -84,10 +88,10 @@ Contraseña: 12052003
 
 #### Columnas
 
-| Nombre        | Tipo de dato | Nulo   | Default    | Auto Increment | Unique |
-|---------------|--------------|--------|------------|----------------|--------|
-| id            | integer      |   NO   | SI         | SI             | SI     |
-| name          | varchar(100) |   NO   | NO         | NO             | NO     |
+| Nombre        | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|---------------|--------------|------------|------------|----------------|--------|
+| **id**        | integer      | NO         | SI         | SI             | SI     |
+| name          | varchar(100) | NO         | NO         | NO             | NO     |
 
 ### Consultas
 * **Tabla:** `queries`
@@ -99,19 +103,106 @@ Contraseña: 12052003
 
 #### Columnas
 
-| Nombre        | Tipo de dato | Nulo   | Default    | Auto Increment | Unique |
-|---------------|--------------|--------|------------|----------------|--------|
-| id            | integer      |   NO   | SI         | SI             | SI     |
-| customer_id   | integer      |   NO   | NO         | NO             | NO     |
-| provider_id   | integer      |   NO   | NO         | NO             | NO     |
-| subject       | varchar(100) |   NO   | NO         | NO             | NO     |
-| message       | text         |   NO   | NO         | NO             | NO     |
-| created_at    | datetime     |   NO   | NO         | NO             | NO     |
+| Nombre        | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|---------------|--------------|------------|------------|----------------|--------|
+| **id**        | integer      |   NO       | SI         | SI             | SI     |
+| customer_id   | integer      |   NO       | NO         | NO             | NO     |
+| provider_id   | integer      |   NO       | NO         | NO             | NO     |
+| subject       | varchar(100) |   NO       | NO         | NO             | NO     |
+| message       | text         |   NO       | NO         | NO             | NO     |
+| created_at    | datetime     |   NO       | NO         | NO             | NO     |
 
 
-### Equipos_Marcas
-* **Tabla:** `equipment_marks`
-* **Modelo:** [User](/docs/modelos/Equip_mark)
+
+### Tipo de Usuario
+* **Tabla:** `user_types`
+* **Modelo:** [UserType](/docs/modelos/user-type)
+* **Clave primaria:** 
+    * `id`
+
+#### Columnas
+
+| Nombre        | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|---------------|--------------|------------|------------|----------------|--------|
+| **id**        | integer(5)   | NO         | NO         | SI             | SI     |
+| description   | varchar(40)  | NO         | NO         | NO             | NO     |
+
+### Opciones
+* **Tabla:** `options`
+* **Modelo:** [Option](/docs/modelos/option)
+* **Clave primaria:** 
+    * `id`
+
+#### Columnas
+
+| Nombre        | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|---------------|--------------|------------|------------|----------------|--------|
+| **id**        | integer(10)  |   SI       | NO         | SI             | SI     |
+| name          | varchar(20)  |   SI       | NO         | NO             | NO     |
+| url           | varchar(40)  |   Si       | NO         | NO             | SI     |
+| description   | varchar(200) |   NO       | NO         | NO             | NO     |
+| available     | bool         |   NO       | 1          | NO             | NO     |
+
+
+### Ubicaciones
+* **Tabla:** `locations`
+* **Modelo:** [Location](/docs/modelos/location)
+* **Clave primaria:** 
+    * `id`
+
+#### Columnas
+
+| Nombre        | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|---------------|--------------|------------|------------|----------------|--------|
+| **id**        | integer(10)  | NO         | NO         | SI             | SI     |
+| province      | varchar(50)  | NO         | NO         | NO             | NO     |
+| department    | varchar(50)  | NO         | NO         | NO             | NO     |
+| city          | varchar(50)  | NO         | NO         | NO             | NO     |
+
+
+### Sugerencias
+* **Tabla:** `suggestions`
+* **Modelo:** [Suggestion](/docs/modelos/suggestion)
+* **Clave primaria:** 
+    * `id`
+* **Claves foraneas:**
+   * `provider_id`
+
+#### Columnas
+
+| Nombre        | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|---------------|--------------|------------|------------|----------------|--------|
+| **id**        | integer(10)  | NO         | NO         | SI             | SI     |
+| provider_id   | integer(10)  | NO         | NO         | NO             | NO     |
+| subject       | varchar(100) | NO         | NO         | NO             | NO     |
+| message       | text         | NO         | NO         | NO             | NO     |
+| file          | varchar(20)  | SI         | NO         | NO             | NO     |
+| viewed        | boolean      | NO         | 1          | NO             | NO     |
+| created_at    | datetime     | NO         | current()  | NO             | NO     |
+
+
+## Tablas intermedias
+
+### Opciones-Usuarios
+* **Tabla:** `user_options`
+* **Modelo:** UserOption
+* **Clave primaria:** 
+    * `user_type_id`
+    * `option_id`
+* **Claves foraneas:**
+    * `user_type_id`
+    * `option_id`
+
+#### Columnas
+
+| Nombre        | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|---------------|--------------|------------|------------|----------------|--------|
+| user_type_id  | integer(10)  | NO         | NO         | NO             | NO     |
+| option_id     | integer(10)  | NO         | NO         | NO             | NO     |
+
+### Equipo-Marcas
+* **Tabla:** `mark_equipments`
+* **Modelo:** MarkEquipment
 * **Clave primaria:** 
     * `equipment_id`
     * `mark_id`
@@ -121,32 +212,43 @@ Contraseña: 12052003
 
 #### Columnas
 
-| Nombre        | Tipo de dato | Nulo   | Default    | Auto Increment | Unique |
-|---------------|--------------|--------|------------|----------------|--------|
-| equipment_id  | integer      |   NO   | NO         | NO             | NO     |
-| mark_id       | integer      |   NO   | NO         | NO             | NO     |
+| Nombre           | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|------------------|--------------|------------|------------|----------------|--------|
+| **equipment_id** | integer      | NO         | NO         | NO             | NO     |
+| **mark_id**      | integer      | NO         | NO         | NO             | NO             |
+
+### Consulta-Equipos
+* **Tabla:** `query_equipments`
+* **Modelo:** QueryEquipment
+* **Clave primaria:** 
+    * `equipment_id`
+    * `query_id`
+* **Claves foraneas:**
+    * `equipment_id`
+    * `query_id`
+
+#### Columnas
+
+| Nombre           | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|------------------|--------------|------------|------------|----------------|--------|
+| **equipment_id** | integer      | NO         | NO         | NO             | NO     |
+| **query_id**     | integer      | NO         | NO         | NO             | NO     |
+| quantity         | integer      | NO         | NO         | NO             | NO         |
 
 
+### Proveedor-Equipos
+* **Tabla:** `provider_equipments`
+* **Modelo:** ProviderEquipment
+* **Clave primaria:** 
+    * `equipment_id`
+    * `provider_id`
+* **Claves foraneas:**
+    * `equipment_id`
+    * `provider_id`
 
-## Stored procedures
-Los SP de la base de datos se encuentran en la carpeta `database/migrations/sp`. Los archivos dentro de la carpeta indicada deben seguir el siguiente formato:
-* Todos los archivos dentro deben ser de tipo `.sql`.
-* El nombre del archivo debe coincidir con el nombre del procedure.
-* El script del procedure no debe contener un `DELIMITER` personalizado.
+#### Columnas
 
-Ejemplo:
-
-```sql title="database/migrations/sp/providers_get.sql"
-create procedure providers_get(
-    xName varchar(60),
-	xProvince varchar(2)
-)
-BEGIN
-...
-... 
-END;
-```
-
-Todos estos procedimientos seran subidos a traves del archivo `2024_04_26_125819_create_stored_procedures_table.php` de la carpeta `migrations`.   
-
-Se hace de esta forma, ya que al ejecutar el comando `php artisan migrate` en la terminal, los procedimientos se eliminaran y se volveran a crear automaticamente, dependiendo del contenido de la carpeta `sp`.
+| Nombre            | Tipo de dato | Nullable   | Default    | Auto Increment | Unique |
+|-------------------|--------------|------------|------------|----------------|--------|
+| **equipment_id**  | integer(10)  | NO         | NO         | NO             | NO     |
+| **provider_id**   | integer(10)  | NO         | NO         | NO             | NO             |
