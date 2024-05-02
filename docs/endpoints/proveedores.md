@@ -9,3 +9,21 @@ Las rutas de los proveedores son manejadas por el controlador `ProviderControlle
 :::note
 Recordar que un **proveedor** es un `User` con el tipo de usuario *provider* (`user_type_id == 3`)
 :::
+
+
+### Vista Home
+
+#### Descripción
+* **Url:** `/proveedor`
+* **Nombre de ruta:** `provider.home`
+* **Parametros obligatorios:** No tiene
+* **Parametros opcionales:**No tiene
+
+#### Logica
+Simplemente retorna la vista de bienvenida. 
+
+#### Vista devuelta
+
+`provider/home.blade.php`
+
+---
