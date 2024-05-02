@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-title: "Validaciones"
+title: "Validaciones y usuarios"
 custom_edit_url: null
 ---
 
