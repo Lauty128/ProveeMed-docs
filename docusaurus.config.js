@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ProveeMed',
+  title: 'PEMS',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/icon.png',
 
@@ -30,8 +30,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -66,11 +66,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/icon.png',
       navbar: {
-        title: 'ProveeMed',
+        title: 'PEMS',
         logo: {
-          alt: 'ProveeMed Logo',
-          src: 'img/icon.png',
-          style:{ borderRadius: '50%' }
+          alt: 'PEMS Logo',
+          src: 'img/icon.png'
         },
         items: [
           {
@@ -82,7 +81,7 @@ const config = {
           {to: '/nosotros', label: 'Nosotros', position: 'left'},
           {to: '/instalacion', label: 'Instalación', position: 'left'},
           {
-            href: 'https://github.com/Lauty128/ProveeMed-laravel',
+            href: 'https://github.com/Lauty128/PEMS',
             label: 'GitHub',
             position: 'right',
           },
@@ -96,7 +95,11 @@ const config = {
             items: [
               {
                 label: 'Introducción',
-                to: '/docs/intro',
+                to: '/docs/introduccion',
+              },
+              {
+                label: 'Estructura',
+                to: '/docs/estructura-del-proyecto',
               },
               {
                 label: 'Base de datos',
@@ -107,30 +110,26 @@ const config = {
                 to: '/docs/validaciones',
               },
               {
-                label: 'Endpoints',
-                to: '/docs/category/endpoints',
+                label: 'Articulos',
+                to: '/docs/articulos-interesantes',
               },
             ],
           },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
           {
-            title: 'More',
+            title: 'Contactos',
+            items: [
+              {
+                label: 'consultas@pems.com.ar',
+                to: 'mailto:consultas@pems.com.ar',
+              },
+              {
+                label: 'Sitio web',
+                href: 'https://pems.com.ar',
+              },
+            ],
+          },
+          {
+            title: 'Otros',
             items: [
               {
                 label: 'Blog',
@@ -138,12 +137,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Lauty128/ProveeMed-laravel',
+                href: 'https://github.com/Lauty128/PEMS',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ProveeMed, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} PEM System`,
       },
       prism: {
         theme: prismThemes.github,

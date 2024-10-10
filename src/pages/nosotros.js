@@ -35,22 +35,30 @@ export default function Nosotros() {
   return (
     <Layout title="Nosotros" description="Sobre nosotros">
       <section className={styles.AboutUs}>
-        <h2 className={styles.AboutUs__h2}>Sobre ProveeMed</h2>
-        <p className={styles.AboutUs__p}>En ProveeMed, estamos comprometidos con la excelencia en el desarrollo de soluciones tecnológicas que impulsen la eficiencia y la calidad en el sector de la salud. Nuestro proyecto, desarrollado con Laravel, es un testimonio de esta misión. Surgido como resultado de nuestras prácticas en la facultad, estamos emocionados de aplicar nuestro aprendizaje en un proyecto con impacto real.</p>
-      
-        <h2 className={styles.AboutUs__h2}>El proyecto</h2>
+        <h2 className={styles.AboutUs__h2}>Sobre PEMS</h2>
         <p className={styles.AboutUs__p}>
-            ProveeMed es una plataforma innovadora diseñada para optimizar la gestión de proveedores en el ámbito médico. <br />
-            Con un enfoque en la simplicidad y la funcionalidad, ProveeMed permite a las instituciones de salud gestionar de manera eficaz sus relaciones con los proveedores, desde la gestión de pedidos hasta la coordinación de entregas y más.
+            PEMS es una plataforma diseñada para facilitar la gestión y consulta de proveedores y equipos médicos en Argentina. Permite a los proveedores actualizar su información y catálogos, mientras que las instituciones médicas pueden buscar y filtrar equipos por provincia, categoría, y otros criterios. 
+            <br/>
+            Con un enfoque en la usabilidad y la eficiencia, PEMS centraliza información relevante para mejorar la conectividad entre proveedores y compradores, promoviendo el acceso rápido y confiable a productos y servicios médicos.
         </p>
 
         <h2 className={styles.AboutUs__h2}>Equipo de desarrollo</h2>
+        <p className={styles.AboutUs__p}>
+            El equipo de desarrollo de PEMS se formó gracias a la visión de una persona involucrada en el ámbito de la salud, quien nos ofreció la oportunidad de embarcarnos en este desafío. Aunque al inicio no teníamos experiencia con equipos médicos, aceptamos el reto y, durante más de un año, hemos atravesado múltiples aprendizajes. Nos encontramos al principio de este camino, con muchos obstáculos superados y otros tantos por delante, pero seguimos avanzando con el entusiasmo de saber que este proyecto recién comienza y tiene mucho por crecer.
+        </p>
+        
+        <small>
+            ✨ <i>Imagenes extraidas de Github</i>
+        </small>
+
         <Cards />
       
         <h2 className={styles.AboutUs__h2}>Nuestra Pasión</h2>
         <p className={styles.AboutUs__p}>
-        En ProveeMed, nos enorgullece trabajar juntos para superar desafíos y ofrecer soluciones que transforman la atención médica. Estamos comprometidos con la excelencia y dedicados a brindar un servicio excepcional a nuestros clientes y usuarios finales. <br />
-Estamos desarrollando este proyecto para Pedro Pablo Escobar, profesor de la Facultad de Ingeniería de Olavarría, UNICEN, como parte de nuestro compromiso con la educación y la aplicación práctica de nuestros conocimientos.
+            Nuestra pasión por la tecnología y el impacto que puede tener en la sociedad es lo que impulsa cada paso que damos en el desarrollo de PEMS. Lo que comenzó como un proyecto entre amigos ha crecido en una oportunidad real para contribuir al ámbito de la salud en Argentina. Creemos firmemente que nuestra plataforma puede marcar una diferencia al facilitar el acceso a información clave sobre proveedores y equipos médicos, optimizando los procesos y mejorando la conectividad en el sector. 
+            <br />
+            <br />
+            A través de la colaboración y el esfuerzo continuo, buscamos ofrecer soluciones que ayuden a las instituciones y a los profesionales de la salud a tomar decisiones más informadas, generando un impacto positivo y duradero en la sociedad.
         </p>
         
       </section>

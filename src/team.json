@@ -2,36 +2,37 @@
     {
         "name": "Lautaro Silverii",
         "role": "Project Manager",
-        "description": "Como Project Manager y Supervisor, Lautaro lidera nuestro equipo con pasión y experiencia, asegurando la entrega exitosa de ProveeMed.",
+        "description": "Responsable de coordinar el equipo y gestionar el proyecto, asegurando que los objetivos se cumplan y manteniendo la visión general del desarrollo de PEMS.",
         "github": "https://github.com/lauty128",
         "linkedin": "https://www.linkedin.com/in/lautaro-silverii-8a5750209/"
     },
     {
+        "name": "Mateo Sosa",
+        "role": "Desarrollador Fullstack",
+        "description": "Encargado de trabajar tanto en el frontend como en el backend, aportando soluciones completas que conectan el diseño visual con la lógica del sistema.",
+        "github": "https://github.com/Mateo13s",
+        "linkedin": ""
+    },
+    
+    {
+        "name": "Máximo Diodato",
+        "role": "Desarrollador Front-end",
+        "description": "Especialista en el diseño y la implementación de la interfaz de usuario, enfocado en crear una experiencia visual y funcional intuitiva.",
+        "github": "https://github.com/MaximoDiodato07",
+        "linkedin": ""
+    },
+    {
         "name": "Máximo Martinez",
-        "role": "Mantenimiento de Integridad de Vistas",
-        "description": "Máximo se encarga de mantener la integridad de las vistas de nuestra plataforma, garantizando una experiencia de usuario impecable.",
+        "role": "Desarrollador Back-end",
+        "description": "Responsable de la creación y optimización de controladores y sistemas de validación, asegurando que los datos y procesos sean manejados de manera eficiente y segura.",
         "github": "https://github.com/MaximoMartinez2001",
         "linkedin": ""
     },
     {
-        "name": "Mateo Sosa",
-        "role": "Responsable de Base de Datos",
-        "description": "Mateo es el guardián de la integridad de los datos en nuestros modelos y controladores, asegurando que la información crítica se mantenga precisa y segura.",
-        "github": "https://github.com/Mateo13s",
-        "linkedin": ""
-    },
-    {
         "name": "Santiago Nehuel Maier",
-        "role": "Desarrollador Backend",
-        "description": "Santiago es el motor detrás de la funcionalidad de ProveeMed, desarrollando soluciones robustas en el backend para garantizar un rendimiento óptimo.",
+        "role": "Desarrollador Back-end",
+        "description": "Se encarga del desarrollo del servidor y la gestión de bases de datos, asegurando el correcto funcionamiento y rendimiento del sistema en general.",
         "github": "https://github.com/Sanl3x",
-        "linkedin": ""
-    },
-    {
-        "name": "Máximo Diodato",
-        "role": "Asistente de Equipo",
-        "description": "Máximo aporta su creatividad y visión al equipo, ofreciendo ideas innovadoras y un apoyo invaluable en todas las etapas del proyecto.",
-        "github": "https://github.com/MaximoDiodato07",
         "linkedin": ""
     }
 ]

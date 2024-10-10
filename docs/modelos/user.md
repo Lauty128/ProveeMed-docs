@@ -6,6 +6,7 @@ custom_edit_url: null
 ---
 
 # User::class
+
     * **Tabla:** `users`
     * [Diccionario](/docs/base-de-datos#usuarios)
     * **Descripción:**
@@ -24,4 +25,3 @@ custom_edit_url: null
     * `suggestions()`: Devuelve listado de [Sugerencias](/docs/base-de-datos#sugerencias) de los proveedores.
 
     * `queries()`: Devuelve listado de [Consultas](/docs/base-de-datos#consultas) realizadas por el cliente.
-
